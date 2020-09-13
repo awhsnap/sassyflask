@@ -37,3 +37,6 @@ six==1.15.0
 SQLAlchemy==1.3.19
 Werkzeug==1.0.1
 wrapt==1.12.1
+
+### Route Testing
+If you're using VSCode there is a handy plugin called Rest Client by Huachao Mao. Simply open up the test.rest and confirm your routes are functioning correctly.
