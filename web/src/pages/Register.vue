@@ -16,7 +16,7 @@
 <script>
 export default {
   metaInfo: {
-    title: 'Login Logout Page'
+    title: 'Create an Account'
   }
 }
 </script>

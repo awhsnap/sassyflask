@@ -1,9 +1,14 @@
 from .extensions import db 
+import datetime
 
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    username = db.Column(db.String(50))
+    email = db.Column(db.String(150), unique=True)
+    username = db.Column(db.String(50), unique=True)
     password = db.Column(db.Text)
+    created_at = db.Column(db.DateTime(timezone=True), default=datetime.datetime.utcnow)
+    modified_at = db.Column(db.DateTime(timezone=True), default=datetime.datetime.utcnow)
+
 
     @classmethod
     def lookup(cls, username):
